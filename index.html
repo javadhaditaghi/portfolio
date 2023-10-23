@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Shivam Gupta" />
+    <meta name="description" content="Responsive Resume CV using HTML CSS and JS" />
+
+    <!--========== BOX ICONS ==========-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+
+    <!--========== CSS ==========-->
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <title>Resume</title>
+</head>
+
+<body>
+    <!--========== HEADER ==========-->
+    <header class="l-header" id="header">
+        <nav class="nav bd-container">
+            <a href="#" class="nav__logo">Javad Haditaghi</a>
+
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active-link">
+                            <i class='bx bx-home nav__icon'></i>Home
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#profile" class="nav__link">
+                            <i class='bx bx-user nav__icon' ></i>Profile
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#education" class="nav__link">
+                            <i class='bx bx-book-open nav__icon'></i>Education
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#publications" class="nav__link">
+                            <i class='bx bx-printer nav__icon' ></i>Publications
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#test_score" class="nav__link">
+                            <i class='bx bx-search nav__icon'></i>English Test
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#test_score" class="nav__link">
+                            <i class='bx bx-edit-alt nav__icon'></i></i>R Interests
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#skills" class="nav__link">
+                            <i class='bx bx-receipt nav__icon' ></i>Skills
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#experience" class="nav__link">
+                            <i class='bx bx-briefcase nav__icon' ></i>Experience
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#certificates" class="nav__link">
+                            <i class='bx bx-award nav__icon' ></i>Certificates
+                        </a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#references" class="nav__link">
+                            <i class='bx bx-link-external nav__icon' ></i>References
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </button>
+        </nav>
+    </header>
+
+    <main class="l-main bd-container">
+        <!-- All elements within this div, is generated in PDF -->
+        <div class="resume" id="area-cv">
+            <div class="resume__left">
+                <!--========== HOME ==========-->
+                <section class="home" id="home">
+                    <div class="home__container section bd-grid">
+                        <div class="home__data bd-grid">
+                            <img src="assets/img/perfil.jpg" alt="home image" class="home__image">
+
+                            <h1 class="home__title">Javad <b>Haditaghi</b></h1>
+                            <h3 class="home__profession">Web Developer & Data Analyst </h3>
+
+                            <div>
+                                <a download="myResume.pdf" href="assets/pdf/myResume.pdf" class="home__button-movil">
+                                    <i class='bx bx-download home__icon' ></i> Download
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="home__address bd-grid">
+                            <span class="home__info">
+                                <i class='bx bx-map home__icon' ></i> Mashhad, Iran
+                            </span>
+                            <span class="home__info">
+                                <i class='bx bx-envelope home__icon' ></i> javadht1990a@gmail.com
+                            </span>
+                            <span class="home__info">
+                                <i class='bx bx-phone home__icon' ></i> +98 937-606-8193
+                            </span>
+                        </div>
+
+                        <!-- Theme change button --> 
+                        <i class="bx bxs-moon change-theme" id="theme-button"></i>
+
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+                        <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                    </div>               
+                </section>
+
+                <!--========== SOCIAL ==========-->
+                <section class="social section">
+                    
+                    <div class="social__container container bd-grid">
+                        <h2 class="section__title">SOCIAL</h2>
+
+                        <div class="social__list bd-grid">
+                            <a href="https://linkedin.com/in/javad-haditaghi/" target="_blank" class="social__link">
+                                <i class='bx bxl-linkedin-square' ></i> @javad-haditaghi
+                            </a>
+                            <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                                <i class='bx bxl-instagram-alt' ></i> @javad_haditaghi
+                            </a>
+                            <a href="https://scholar.google.com/citations?hl=en&user=WugVbXEAAAAJ" target="_blank" class="social__link">
+                                <i class='bx bxs-graduation'></i></i> Javad Haditaghi
+                            </a>
+                        </div>
+                    </div>
+                </section>
+
+
+                <!--========== Personal Information ==========-->
+                <section class="social section" id="personal-information">
+                    <h3 class="section__title">Personal Info</h3>
+                    <div class="home__address bd-grid">
+                        <span class="home__info">
+                            <strong>DOB</strong>: 22 September 1990
+                        </span>
+                        <span class="home__info">
+                            </i> <strong>Nationality</strong>: Iranian
+                        </span>
+                       
+                    </div>
+
+
+                </section>
+
+                <!--========== PROFILE ==========-->
+                <section class="profile section" id="profile">
+                    <div class="profile__container container bd-grid">
+                        <h2 class="section__title">PROFILE</h2>
+                        <p class="profile__desc">
+                        <i class='bx bx-user-check'></i>A multidisciplinary researcher, as demonstrated by merging network theory with discourse analysis using Computational Linguistics, resulting in 1 publication in a peer-reviewed scientific journal
+                        </p>
+                        <p class="profile__desc">
+                            <i class='bx bx-user-check'></i> An eager data analyst who performed multiple analyses using deep learning and machine learning methods.
+                        </p>
+                        <p class="profile__desc">
+                            <i class='bx bx-user-check'></i>
+A highly qualified web developer striving to implement artificial intelligence techniques to enhance user experience and website performance.
+                        </p>
+
+                        <p class="profile__desc">
+                            <i class='bx bx-user-check'></i>An ambitious teacher and writer who has evaluated a significant number of teaching methods and writing techniques to apply in an academic environment 
+                        </p>
+                    </div>
+                </section>
+
+                
+
+                <!--========== SKILLS  ==========-->
+                <section class="skills section" id="skills">
+                    <h2 class="section__title">Skills</h2>
+
+                    <h3 class="title">Programming</h3>
+                    <div class="skills__container bd-grid">
+                        
+                        <div class="skills__content">
+                            <!-- <h3>web Development Skills</h3> -->
+                            <ul class="skills__data">
+                                <li class="skills__name">HTML</li>
+                                <li class="skills__name">CSS</li>
+                                <li class="skills__name">Sass</li>
+                                <li class="skills__name">JavaScript</li>
+                                <li class="skills__name">Jquery</li>
+                                <li class="skills__name">Bootstrap</li>
+                                <li class="skills__name">React</li>
+                            </ul>
+                        </div>
+
+                        <div class="skills__content">
+                            
+                            <ul class="skills__data">
+                                <li class="skills__name">Python</li>
+                                <li class="skills__name">Pandas</li>
+                                <li class="skills__name">Matplotlib</li>
+                                <li class="skills__name">Numpy</li>
+                                <li class="skills__name">Seaborn</li>
+                                <li class="skills__name">Pytorch</li>
+                                <li class="skills__name">Scikitlearn</li>
+                                <li class="skills__name">OpenCV</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <h3 class="title">Other Skills</h3>
+                    <div class="skills__container bd-grid">
+                        
+                        <div class="skills__content">
+                            <!-- <h3>web Development Skills</h3> -->
+                            <ul class="skills__data">
+                                <li class="skills__name">Using Gephi</li>
+                                <li class="skills__name">Microsoft Office</li>
+                                
+                                
+                            </ul>
+                        </div>
+
+                        <div class="skills__content">
+                            
+                            <ul class="skills__data">
+                                <li class="skills__name">Content Writing</li>
+                                <li class="skills__name">Webscraping</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+            <div class="resume__right">
+                <!--========== EDUCATION ==========-->
+                <section class="experience section" id="education">
+                    <h3 class="section__title">Education</h3>
+
+                    <div class="experience__container bd-grid">
+                        <div class="experience__content">
+                            <div class="experience__boundary">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                
+                            <div class="experience__info bd-grid">
+                                <h3 class="experience__title">M.A. in English Teaching</h3>
+                                <div class="experience__year">From 2015 to 2018 | Guilan University</div>
+                                <div class="experience__supervisor">Supervised by Dr. Jaleh Hassaskhah</div>
+                                <div class="experience__desc"> <strong>Thesis Title: </strong>A corpus linguistic approach to the study of the voices in the text in light of Laclau and Mouffe's discourse theory
+                                    <p>*A synopsis of the work undertaken is attached <strong><a href="synopsis.html" class="social__link" target="_blank" rel="noopener noreferrer">here</a></strong></p>
+                                
+                                </div>
+                            </div>
+                        </div>
+                        <div class="experience__content">
+                            <div class="experience__boundary">
+                                <span class="experience__rounder"></span>
+                                <!-- <span class="experience__line"></span> -->
+                            </div>
+                
+                            <div class="experience__info bd-grid">
+                                <h3 class="experience__title">B.A. in English Translation</h3>
+                                <div class="experience__year">From 2010 to 2014 |</div>
+                                <!-- <div class="experience__desc">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity. 
+                                </div> -->
+                            </div>
+                        </div>
+                        <!-- <div class="experience__content">
+                            <div class="experience__boundary">
+                                <span class="experience__rounder"></span>
+                                <span class="experience__line"></span>
+                            </div>
+                
+                            <div class="experience__info bd-grid">
+                                <h3 class="experience__title">Mobile App Developer</h3>
+                                <div class="experience__year">From 2017 to 2019 | Apple Tech</div>
+                                <div class="experience__desc">Work in this company dedicating the best responsibility in the area that corresponds, delivering the best results for the company and improving productivity. 
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </section>
+
+                <!--========== Publications ==========-->
+                <section class="test-score section" id="publications">
+                    <h2 class="section__title">Publications</h2>
+                    <div class="education__content">
+                        <div class="education__boundary">
+                            <span class="education__rounder"></span>
+                            <!-- <span class="education__line"></span> -->
+                        </div>
+            
+                        <div class="education__info bd-grid">
+                            <h3 class="education__title">A network-based approach for discourse analysis from Laclau and Mouffe's perspectives.
+                            </h3>
+                            <div class="experience__desc">Haditaghi, J., Hassasskhah, J., & Sorahi, M. (2020). A network-based approach for discourse analysis from Laclau and Mouffe's perspectives. Journal of Computer-Assisted Linguistic Research, 4(1), 1-22. 
+                            </div>
+                            <div class="education__time"><a href="https://doi.org/10.4995/jclr.2020.12105" target="_blank" class="social__link">Click for DOI</a></div>
+                            <!-- <div class="education__year"><strong>Listening:</strong> 29 | <strong>Reading:</strong> 29 | <strong>Speaking:</strong> 25 | <strong>Writing:</strong> 30</div> -->
+                            
+                        </div>
+
+                        
+                    </div>
+                    <div class="education__content">
+                        <div class="education__boundary">
+                            <span class="education__rounder"></span>
+                            <!-- <span class="education__line"></span> -->
+                        </div>
+            
+                        <div class="education__info bd-grid">
+                            <h3 class="education__title">Signifier, relation and text: A network-based approach for semantic content analysis
+                            </h3>
+                            <div class="experience__desc">Accepted but not published
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="education__content">
+                        <div class="education__boundary">
+                            <span class="education__rounder"></span>
+                            <span class="education__line"></span>
+                        </div>
+            
+                        <div class="education__info bd-grid">
+                            <h3 class="education__title">Signifier, relation and text: A network-based approach for semantic content analysis
+                            </h3>
+                            <div class="experience__desc">Accepted but not published
+                            </div>
+                        </div>
+
+                    </div> -->
+                    
+
+
+                </section>
+
+
+                <!--========== English Test Score ==========-->
+
+                <section class="test-score section" id="test_score">
+                    <h2 class="section__title">Test Scores</h2>
+                    <div class="education__content">
+                        <div class="education__boundary">
+                            <span class="education__rounder"></span>
+                            <!-- <span class="education__line"></span> -->
+                        </div>
+            
+                        <div class="education__info bd-grid">
+                            <h3 class="education__title">TOEFL Test Score </h3>
+                            <div class="education__time">October 2022</div>
+                            <div class="education__year"><strong>Listening:</strong> 29 | <strong>Reading:</strong> 29 | <strong>Speaking:</strong> 25 | <strong>Writing:</strong> 30</div>
+                            <div class="experience__desc"><strong>Overal Score:</strong> 113
+                            </div>
+                        </div>
+                    </div>
+
+
+                </section>
+
+
+                <!--========== Research Interests ==========-->
+                <section class="intersts section" id="reseach-intersts">
+                    <h2 class="section__title">Research Intersts</h2>
+
+                    <div class="skills__container bd-grid">
+                        <div class="skills__content">
+                            <!-- <h3>web Development Skills</h3> -->
+                            <ul class="skills__data">
+                                <li class="skills__name">Network Theory</li>
+                                <li class="skills__name">Computational Linguistics</li>
+                                <li class="skills__name">Complex Theory</li>
+                                <li class="skills__name">Natural Language Processing</li>
+                                
+                            
+                            </ul>
+                        </div>
+
+                        <div class="skills__content">
+                            <ul class="skills__data">
+                                <li class="skills__name">Machine Learning</li>
+                                <li class="skills__name">Deep Learning</li>
+                                <li class="skills__name">Interdisciplinary Approaches</li>
+                                <li class="skills__name">Data Analysis</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </section>
+
+
+
+                <!--========== Experience ==========-->
+                <section class="education section" id="experience">
+                    <h2 class="section__title">Experience</h2>
+                
+                    <div class="education__container container bd-grid">
+                        <div class="education__content">
+                            <div class="education__boundary">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                
+                            <div class="education__info bd-grid">
+                                <h3 class="education__title">Team Manager | Deka Team </h3>
+                                <div class="education__time"> Deka Team</div>
+                                <div class="education__year">2023 - NOW</div>
+                                <div class="experience__desc">Develop and implement a strategic roadmap for the integration of AI technologies into web development projects, ensuring alignment with company objectives and industry best practices.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__boundary">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                
+                            <div class="education__info bd-grid">
+                                <h3 class="education__title">Web Developer & Data Analyst </h3>
+                                <div class="education__time">Golden Nutrition LLC</div>
+                                <div class="education__year">2020 - Now </div>
+                                <div class="experience__desc"> Conduct comprehensive data analysis to identify trends, patterns, and insights, leveraging statistical techniques and data mining tools to optimize business processes and drive informed decision-making.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="education__content">
+                            <div class="education__boundary">
+                                <span class="education__rounder"></span>
+                                <span class="education__line"></span>
+                            </div>
+                
+                            <div class="education__info bd-grid">
+                                <h3 class="education__title">Web Developer</h3>
+                                <div class="education__time">Freelancer</div>
+                                <div class="education__year">2018 - Now</div>
+                                <div class="experience__desc"> Collaborate with clients to conceptualize, design, and implement intuitive user interfaces and responsive web applications, ensuring a seamless user experience as a freelance front-end developer.
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="education__content">
+                            <div class="education__boundary">
+                                <span class="education__rounder"></span>
+                                <!-- <span class="education__line"></span> -->
+                            </div>
+                
+                            <div class="education__info bd-grid">
+                                <h3 class="education__title">English Teacher</h3>
+                                <div class="education__time">Different Institutes in Mashhad</div>
+                                <div class="education__year">2012 - Now</div>
+                                <div class="experience__desc"> Develop and deliver comprehensive English language lessons to students across various institutes in Mashhad, ensuring a dynamic and engaging learning environment.
+                                </div>
+                            </div>
+                        </div>
+                
+                    </div>
+                </section>
+
+
+                <!--========== CERTIFICATES ==========-->
+                <section class="certificate section" id="certificates">
+                    <h3 class="section__title">Certificate</h3>
+
+                    <div class="certificate__container bd-grid">
+                        <div class="certificate__content">
+                            <div class="certificate__title">Programming with JavaScript (META)</div>
+                            <div class="certificate__desc"> This course helped me get a good understanding of the JS programming language.
+                            </div>
+                            <div class="certificate__desc"><a href="https://coursera.org/share/6a207de2eed505b1e19c40964b375abc" class="social__link " target="_blank" rel="noopener noreferrer">Click here to see it on Coursera</a>
+                            </div>
+                        </div>
+
+                        <div class="certificate__content">
+                            <div class="certificate__title">HTML5 & CSS3 Complete Course: Build Websites like a Pro (Udemy)</div>
+                            <div class="certificate__desc">In this course, I learned html and css ability to creat responsive and user friendly interfaces.
+                            </div>
+                            <div class="certificate__desc"><a href="http://ude.my/UC-f1b8e666-c2a1-4f3f-a7cc-742a6c0d228b" class="social__link " target="_blank" rel="noopener noreferrer">Click here to see it on Udemy</a>
+                            </div>
+                        </div>
+
+                        <div class="certificate__content">
+                            <div class="certificate__title">Python Programming (from MFT Mashhad)</div>
+                            <div class="certificate__desc"> In this course I tried to learn the basics of python programming
+                            </div>
+                        </div>
+                        <div class="certificate__content">
+                            <div class="certificate__title">Advanced Python Programming (from MFT Mashhad)</div>
+                            <div class="certificate__desc">In this course, I have tried to learn data analysis using machine learning and deep learning algorithms.
+                            </div>
+                        </div>
+                        <div class="certificate__content">
+                            <div class="certificate__title">Web Design (MFT Mashhad)</div>
+                            <div class="certificate__desc">In this course, I learned html, css, js, ajax and react to creat responsive and user friendly interfaces.
+                            </div>
+                        </div>
+                        <div class="certificate__content">
+                            <div class="certificate__title">Web Design (MFT Mashhad)</div>
+                            <div class="certificate__desc">In this course, I learned html, css, js, ajax and react to creat responsive and user friendly interfaces.
+                            </div>
+                        </div>
+                       
+                    
+                    </div>
+                </section>
+
+
+                <!--========== LANGUAGES ==========-->
+                <section class="languages section" id="languages">
+                    <h3 class="section__title">Languages</h3>
+
+                    <div class="languages__container bd-grid">
+                        <div class="languages__content">
+                            <ul class="languages__data">
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> Persian (Native)
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> English (C2)
+                                </li>
+                                <li class="languages__name">
+                                    <span class="languages__circle"></span> German (A1)
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== INTERESTS ==========-->
+                <section class="interests section">
+                    <h3 class="section__title">Interests</h3>
+
+                    <div class="interests__container bd-grid">
+                        <div class="interests__content">
+                            <div class="interests__data">
+                                <i class='bx bx-headphone' ></i>
+                                <span class="interests__name">Classical Music</span>
+                            </div>
+
+                            <div class="interests__data">
+                                <i class='bx bxs-plane-alt' ></i>
+                                <span class="interests__name">Travel</span>
+                            </div>
+
+                            <div class="interests__data">
+                                <i class='bx bxs-book' ></i>
+                                <span class="interests__name">Reading</span>
+                            </div>
+
+                            <div class="interests__data">
+                                <i class='bx bx-question-mark'></i>
+                                <span class="interests__name">Conceptual Art</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!--========== REFERENCES ==========-->
+                <section class="references section" id="references">
+                    <h3 class="section__title">References</h3>
+
+                    <div class="references__container bd-grid">
+                        <div class="references__content bd-grid" >
+                            <div class="references__title">Dr. Jaleh Hassaskhah (My M.A. thesis advisor)</div>
+                            <div class="references__subtitle">Associate professor, Department of English Language & Literature</div>
+                            <div class="references__subtitle">Guilan University, Rasht, Iran</div>
+                            
+                            <ul class="references__contact">
+                                <li>Phone: 000-000-0000*</li>
+                                <li>Email: jaleh_hassaskhah@yahoo.com</li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid" >
+                            <div class="references__title">Dr. Mohammad Amin Sorahi (My M.A. thesis Co-Supervisor)</div>
+                            <div class="references__subtitle">Assistant professor, Department of English Language and Literature
+                            </div>
+                            <div class="references__subtitle">Guilan University, Rasht, Iran</div>
+                            
+                            <ul class="references__contact">
+                                <li>Phone: 000-000-0000*</li>
+                                <li>Email: aminsorahi@hotmail.com
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="references__content bd-grid" >
+                            <div class="references__title">Dr. Abdorreza Tahriri (My M.A. thesis referee & course professor)</div>
+                            <div class="references__subtitle">Associate professor, Department of English Language and Literature
+
+                            </div>
+                            <div class="references__subtitle">Guilan University, Rasht, Iran</div>
+                            
+                            <ul class="references__contact">
+                                <li>Phone: 000-000-0000*</li>
+                                <li>Email: atahriri@gmail.com
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+
+
+    <!--========== SCROLL TOP ==========-->
+    <a href="#" class="srolltop" id="scroll-top">
+        <i class='bx bx-up-arrow-alt' ></i>
+    </a>
+
+    <!--========== HTML2PDF ==========-->
+    <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+    <!--========== MAIN JS ==========-->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
