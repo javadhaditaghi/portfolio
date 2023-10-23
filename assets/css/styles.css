@@ -525,7 +525,7 @@ img{
   display: flex;
   column-gap: 4rem;
   justify-content: flex-start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .interests__data{
